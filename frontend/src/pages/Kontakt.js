@@ -3,6 +3,7 @@ import Sidebar from "../components/Sidebar";
 import Footer from "../components/Footer";
 import Map from "../components/Map/Map";
 import { useState, useEffect } from "react";
+import { apiBaseUrl } from "./../api"
 
 const Kontakt = () => {
 
@@ -12,7 +13,7 @@ const Kontakt = () => {
 
     const sendNewRequest = () => {
 
-        fetch("http://localhost:9000/kontaktanfragen/neueanfrage", {
+        fetch(apiBaseUrl + "/kontaktanfragen/neueanfrage", {
             method: "post",
             headers: {
                 "Content-Type": "application/json"
