@@ -1,0 +1,57 @@
+.vorstand {
+    padding: 17vh 8vw;
+}
+
+.vorstand h1 {
+    color: rgb(108, 118, 89);
+    font-family: 'Roboto', sans-serif;
+    font-size: 6rem;
+    padding-bottom: 4vh;
+}
+
+.vorstand p {
+    font-size: 1.6rem;
+}
+
+.vorstand p span {
+    font-weight: 700;
+    color: rgb(31, 41, 13);
+}
+
+.absatz {
+    padding: 1vh 0;
+}
+
+.absatz2 {
+    padding: 1vh 0 1vh 30vw;
+}
+
+.vorstaende {
+    display: flex;
+    padding: 3vh 10vw 3vh 30vw;
+    justify-content: space-between;
+
+}
+
+.vorstand h2 {
+    font-size: 2rem;
+    color: rgb(108, 118, 89);
+    padding: 1vh 0;
+}
+
+.vorstaende div p:nth-of-type(1) {
+    padding-bottom: 1vh;
+    font-size: 1.4rem;
+}
+
+.schmetterlingVorstand {
+    position: absolute;
+    left: 5vw;
+    bottom: 4vw;
+    width: 25vw;
+}
+
+.schmetterlingVorstand:hover {
+    transform: rotate(10deg);
+    cursor: pointer;
+}

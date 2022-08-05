@@ -1,0 +1,49 @@
+/* =================================================
+            HEADER STYLES
+==================================================== */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 2vh;
+}
+
+footer ul {
+    background-color: white;
+    margin: 0 33vw;
+    padding-top: 2vh;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+footer ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: rgb(108, 118, 89);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    display: inline-block;
+    padding: 0 1vw 2vh 1vw;
+}
+
+footer ul li a:after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(108, 118, 89);
+    transition-duration: .5s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+footer ul li a:hover:after {
+    width: 100%;
+}

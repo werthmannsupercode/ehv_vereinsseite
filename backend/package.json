@@ -1,0 +1,29 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "backend des Webauftritts der Eigenheimer Vereinigung Waigolshausen Theilheim eV",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src index.js"
+  },
+  "keywords": [
+    "Verein",
+    "Webseite",
+    "Waigolshausen",
+    "Theilheim",
+    "Eigenheimer"
+  ],
+  "author": "Michaela Werthmann (werthmannmichaela@gmail.com)",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "googleapis": "^105.0.0",
+    "mongodb": "^4.8.1",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.7.7",
+    "nodemon": "^2.0.19"
+  }
+}

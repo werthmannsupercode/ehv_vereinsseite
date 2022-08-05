@@ -1,0 +1,69 @@
+.satzung {
+    padding: 17vh 8vw;
+
+}
+
+.satzung h1 {
+    color: rgb(108, 118, 89);
+    font-family: 'Roboto', sans-serif;
+    font-size: 6rem;
+    padding-bottom: 3vh;
+}
+
+.satzung h2 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 3vh 0;
+    color: rgb(31, 41, 13)
+}
+
+.satzung p,
+.satzung li {
+    font-size: 1.6rem;
+}
+
+.satzung h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 1vh 0;
+}
+
+.satzung p:nth-of-type(1),
+.satzung p:nth-of-type(2),
+.satzung p:nth-of-type(3),
+.satzung p:nth-of-type(4),
+.satzung p:nth-of-type(5),
+.satzung p:nth-of-type(6),
+.satzung p:nth-of-type(11) {
+    text-align: center;
+    line-height: 2;
+}
+
+.satzung p:nth-of-type(7),
+.satzung p:nth-of-type(8) {
+    padding: 0 35vw;
+}
+
+.satzung p:nth-of-type(9),
+.satzung p:nth-of-type(10),
+.satzung p:nth-of-type(12) {
+    padding: 1vh 10vw;
+}
+
+.satzung p span,
+.satzung li span {
+    font-weight: 700;
+}
+
+.satzung ol {
+    padding: 0 10vw;
+}
+
+.satzung ol li {
+    padding: 1vh 0;
+}
+
+.satzung ol ul {
+    padding: 0 5vw;
+}

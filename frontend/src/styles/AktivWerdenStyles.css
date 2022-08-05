@@ -1,0 +1,45 @@
+.aktivWerden {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17vh 8vw;
+    gap: 5vw;
+}
+
+.aktivWerden div h1,
+.aktivWerden div h2 {
+    color: rgb(108, 118, 89);
+}
+
+.aktivWerden div h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 6rem;
+    /* padding: 35vh 0 0 10vw; */
+}
+
+.aktivWerden div h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    padding: 1vh 0 2vh 0;
+    font-weight: 300;
+}
+
+.aktivWerden div p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    padding: 0 0 2vh 0;
+}
+
+.aktivWerden div p:nth-of-type(5) {
+    font-weight: 500;
+}
+
+.aktivWerden img {
+    object-fit: contain;
+    width: 40%;
+}
+
+.aktivWerden img:hover {
+    transform: rotate(10deg);
+    cursor: pointer;
+}

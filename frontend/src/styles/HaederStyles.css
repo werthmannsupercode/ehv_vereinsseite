@@ -1,0 +1,33 @@
+/* =================================================
+            HEADER STYLES
+==================================================== */
+
+header {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+header h2 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 7rem;
+    padding: 35vh 0 0 10vw;
+}
+
+header h3 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 4rem;
+    padding: 1vh 0 5vh 10vw;
+    font-weight: 300;
+}
+
+header p {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    padding: 0 15vw 2vh 10vw;
+}

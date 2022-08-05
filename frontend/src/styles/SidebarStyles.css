@@ -1,0 +1,27 @@
+/* =================================================
+            SIDEBAR STYLES
+==================================================== */
+
+aside {
+    position: fixed;
+    right: 0;
+    bottom: 10vh;
+    background-color: white;
+    padding-top: 2vh;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+aside a {
+    text-decoration: none;
+    color: rgb(108, 118, 89);
+    font-family: 'Roboto', sans-serif;
+    font-size: 4rem;
+    display: inline-block;
+    padding: 0 1vw 2vh 1vw;
+    display: block;
+}
+
+aside a:hover {
+    color: rgb(70, 78, 55);
+}

@@ -1,0 +1,82 @@
+.navbar {
+    height: 10vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navbarLogo {
+    color: rgb(31, 41, 13);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbarLogo div h1 {
+    font-size: 1.8rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.navbarLogo div h1:hover {
+    color: rgb(108, 118, 89);
+}
+
+
+.nav-items {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    width: 52vw;
+    justify-content: flex-end;
+}
+
+.nav-item,
+.nav-item1,
+.nav-item2 {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    font-size: 1.6rem;
+}
+
+.nav-item a,
+.nav-item1 a,
+.nav-item2 a {
+    color: rgb(108, 118, 89);
+    text-decoration: none;
+    font-size: 1.6rem;
+    margin-right: 2vw;
+    padding: 1vh 1vw;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-item a:after,
+.nav-item1 a:after,
+.nav-item2 a:after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(108, 118, 89);
+    transition-duration: .5s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.nav-item a:hover:after,
+.nav-item1 a:hover:after,
+.nav-item2 a:hover:after {
+    width: 100%;
+}
+
+.logoimg {
+    width: 3vw;
+    height: 3vw;
+}

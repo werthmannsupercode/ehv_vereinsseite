@@ -1,0 +1,13 @@
+.sommerbaumschnittkurs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17vh 8vw;
+    gap: 5vw;
+}
+
+.sommerbaumschnittkurs h1 {
+    color: rgb(108, 118, 89);
+    font-family: 'Roboto', sans-serif;
+    font-size: 6rem;
+}

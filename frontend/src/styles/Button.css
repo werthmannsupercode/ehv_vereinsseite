@@ -1,0 +1,14 @@
+.btn {
+    border: 1px solid rgb(108, 118, 89);
+    padding: 1vh 2vw;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    color: rgb(108, 118, 89);
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: rgb(108, 118, 89);
+    color: white;
+}
