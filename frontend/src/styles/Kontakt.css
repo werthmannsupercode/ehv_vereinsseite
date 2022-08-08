@@ -1,0 +1,76 @@
+.labelKontakt {
+    display: block;
+    padding-bottom: 1vh;
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(108, 118, 89);
+    font-weight: 500;
+}
+
+.firstBlock {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 2vh;
+}
+
+form {
+    margin: 4vh auto;
+    width: 60vw;
+}
+
+.h1Kontakt {
+    padding-top: 20vh;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 300;
+}
+
+.firstBlock div input {
+    width: 27.5vw;
+    padding: 1vh 1vw;
+    font-family: 'Roboto', sans-serif;
+    border: 2px solid rgb(108, 118, 89);
+    font-size: 1.4rem;
+    border-radius: 3px;
+}
+
+.secondBlock,
+.thirdBlock {
+    padding-bottom: 2vh;
+    width: 100%;
+}
+
+.secondBlock input {
+    width: 100%;
+    padding: 1vh 1vw;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+
+.thirdBlock textarea {
+    width: 100%;
+    padding: 1vh 1vw;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    border: 2px solid rgb(108, 118, 89);
+    border-radius: 3px;
+}
+
+.submitKontakt {
+    width: 100%;
+    padding: 1.5vh 1vw;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    border: 2px solid rgb(108, 118, 89);
+    border-radius: 3px;
+    color: rgb(108, 118, 89);
+}
+
+.submitKontakt:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(108, 118, 89);
+}
