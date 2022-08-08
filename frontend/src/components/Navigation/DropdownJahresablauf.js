@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
-import { ueberunsDropdown } from './NavItems';
+import { jahresablaufDropdown } from './NavItems';
 import { Link } from 'react-router-dom';
-import "../styles/Dropdown.css";
+import "../../styles/NavigationStyles/DropdownJahresablaufStyles.css";
 
-const DropdownUeberUns = () => {
+const DropdownJahresablauf = () => {
 
     const [dropdown, setDropdown] = useState(false)
+
     return (<div>
-        <ul className={dropdown ? "ueberunsSubmenu clicked" : "ueberunsSubmenu"} onClick={() => setDropdown(!dropdown)}>
-            {ueberunsDropdown.map(item => {
+        <ul className={dropdown ? "jahresablaufSubmenu clicked" : "jahresablaufSubmenu"} onClick={() => setDropdown(!dropdown)}>
+            {jahresablaufDropdown.map(item => {
                 return (
                     <li key={item.id} >
                         <Link to={item.path} className={item.cName} onClick={() => setDropdown(false)}>{item.title}</Link>
@@ -20,4 +21,4 @@ const DropdownUeberUns = () => {
     </div>);
 }
 
-export default DropdownUeberUns;
+export default DropdownJahresablauf;

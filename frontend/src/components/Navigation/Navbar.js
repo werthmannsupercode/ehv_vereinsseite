@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "../styles/Navbar.css";
+import "./../../styles/NavigationStyles/Navbar.css";
 import { navItems } from "./NavItems";
 import Button from "./Button";
 import DropdownUeberUns from "./DropdownUeberUns";
 import DropdownJahresablauf from "./DropdownJahresablauf";
-import logoehv from "../images/logoehv.png";
+import logoehv from "../../images/logoehv.png";
 
 const Navbar = () => {
 

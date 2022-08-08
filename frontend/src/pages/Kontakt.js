@@ -1,10 +1,10 @@
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navigation/Navbar";
 import Sidebar from "../components/Sidebar";
 import Footer from "../components/Footer";
-import Map from "../components/Map/Map";
+// import Map from "../components/Map/Map";
 import { useState } from "react";
 import { apiBaseUrl } from "./../api";
-import "./../styles/Kontakt.css"
+import "./../styles/Kontakt.css";
 
 const Kontakt = () => {
 
@@ -12,22 +12,54 @@ const Kontakt = () => {
     const [email, setEmail] = useState("")
     const [text, setText] = useState("")
     const [phone, setPhone] = useState("")
+    const [showPopUpText, setShowPopUpText] = useState(false)
+    const [showPopUpName, setShowPopUpName] = useState(false)
+    const [showPopUpEmail, setShowPopUpEmail] = useState(false)
+    const [showPopUpSuccess, setShowPopUpSuccess] = useState(false)
+    const [showPopUpNoSend, setShowPopUpNoSend] = useState(false)
 
-    const sendNewRequest = () => {
+    function handleErrors(response) {
+        if (!response.ok) {
+            setShowPopUpNoSend(!showPopUpNoSend)
+            return
+        }
+        else {
+            return setShowPopUpSuccess(true), setName(""), setText(""), setEmail(""), setPhone("");
+        }
+    }
 
-        fetch(apiBaseUrl + "/kontaktanfragen/neueanfrage", {
-            method: "post",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-                name,
-                email,
-                text,
-                phone
-            })
-        }).then(res => res.json(), alert("Vielen Dank für deine Anfrage. Wir haben dir eine Eingangsbestätigung an deine Emailaddresse geschickt.")
-        )
+    const sendNewRequest = (e) => {
+        e.preventDefault();
+        if (name.length === 0) {
+            setShowPopUpName(!showPopUpName)
+            return
+        }
+        if (email.indexOf("@") === -1 || email.length === 0) {
+            setShowPopUpEmail(!showPopUpEmail)
+            return
+        }
+        if (text.length === 0) {
+            setShowPopUpText(!showPopUpText)
+            return
+        }
+        else {
+            fetch(apiBaseUrl + "/kontaktanfragen/neueanfrage", {
+                method: "post",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    name,
+                    email,
+                    text,
+                    phone
+                })
+            }).then(handleErrors)
+                .then(res => res.json())
+                .catch((error) => {
+                    console.log(error)
+                })
+        }
     }
 
 
@@ -57,7 +89,7 @@ const Kontakt = () => {
                 <input type="submit" value="ABSENDEN" onClick={sendNewRequest} className="submitKontakt" />
             </form>
         </div>
-        <div className="kontakt">
+        {/* <div className="kontakt">
             <h1>Kontakt</h1>
             <div>
                 <div>
@@ -83,9 +115,42 @@ const Kontakt = () => {
                 </div>
             </div>
         </div>
-        <Map />
+        <Map /> */}
         <Sidebar />
         <Footer />
+        {showPopUpName &&
+            <div className="popUp">
+                <p>Bitte gib deinen Namen ein.</p>
+                <button onClick={() => setShowPopUpName(false)}>schließen</button>
+            </div>
+        }
+        {showPopUpEmail &&
+            <div className="popUp">
+                <p>Bitte gib deine Emailaddresse ein.</p>
+                <button onClick={() => setShowPopUpEmail(false)}>schließen</button>
+            </div>
+        }
+        {showPopUpText &&
+            <div className="popUp">
+                <p>Bitte gib eine Nachricht ein.</p>
+                <button onClick={() => setShowPopUpText(false)}>schließen</button>
+            </div>
+        }
+        {showPopUpSuccess &&
+            <div className="popUp">
+                <h1>Wir haben deine Nachricht erhalten.</h1>
+                <p>Zur Bestätigung haben wir dir soeben eine Nachricht an deine Emailaddresse geschickt.</p>
+                <p>Wir werden uns in Kürze bei dir melden.</p>
+                <button onClick={() => setShowPopUpSuccess(false)}>schließen</button>
+            </div>
+        }
+        {showPopUpNoSend &&
+            <div className="popUp">
+                <h1>Uuuupss... ein Fehler ist aufgetreten.</h1>
+                <p>Bitte versuche es erneut.</p>
+                <button onClick={() => setShowPopUpNoSend(false)}>schließen</button>
+            </div>
+        }
     </div >);
 }
 
