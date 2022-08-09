@@ -65,6 +65,7 @@ const Kontakt = () => {
 
     return (<div>
         <Navbar />
+        <h1 className="haedlineKontakt">Kontakt</h1>
         <div>
             <h1 className="h1Kontakt">Hallo, schön, dass du da bist. Wir freuen uns von dir zu hören. Schicke uns einfach eine Nachricht.</h1>
             <form>
@@ -89,17 +90,17 @@ const Kontakt = () => {
                 <input type="submit" value="ABSENDEN" onClick={sendNewRequest} className="submitKontakt" />
             </form>
         </div>
-        {/* <div className="kontakt">
-            <h1>Kontakt</h1>
+        <div className="kontakt">
             <div>
-                <div>
-                    <h2>Eigenheimer-Vereinigung</h2>
-                    <h2>Waigolshausen-Theilheim e.V.</h2>
-                    <p>Am Oberen Tor</p>
-                    <p>97534 Waigolshausen</p>
-                </div>
-                <div>
-                    <h3>Vorstände und Postanschriften:</h3>
+                <h3>Standort unserer Vereinshalle:</h3>
+                <h2>Eigenheimer-Vereinigung</h2>
+                <h2>Waigolshausen-Theilheim e.V.</h2>
+                <p>Am Oberen Tor</p>
+                <p>97534 Waigolshausen</p>
+            </div>
+            <div >
+                <h3>Vorstände und Postanschriften:</h3>
+                <div className="kontaktVorstaende">
                     <div>
                         <h2>Karl-Heinz Rummel</h2>
                         <p>Sonnenstr. 15</p>
@@ -115,28 +116,32 @@ const Kontakt = () => {
                 </div>
             </div>
         </div>
-        <Map /> */}
+        <iframe className="lageplan" title="lageplan" src='https://geoportal.bayern.de/bayernatlas/embed.html?lang=de&topic=ba&catalogNodes=11&bgLayer=atkis&E=580479.72&N=5534987.73&zoom=13.07464492678643&layers=KML%7C%7Chttps:%2F%2Fgeoportal.bayern.de%2Fba-backend%2Ffiles%2Ff_352904f0-17ba-11ed-a0b1-8bcabcd741ed_6daae0ba-08be-4b13-b353-ff1983fd5615%7C%7Ctrue' width='800' height='600' frameBorder='0' style={{ border: 0 }} samesite="None" secure="true"></iframe>
         <Sidebar />
         <Footer />
-        {showPopUpName &&
+        {
+            showPopUpName &&
             <div className="popUp">
                 <p>Bitte gib deinen Namen ein.</p>
                 <button onClick={() => setShowPopUpName(false)}>schließen</button>
             </div>
         }
-        {showPopUpEmail &&
+        {
+            showPopUpEmail &&
             <div className="popUp">
                 <p>Bitte gib deine Emailaddresse ein.</p>
                 <button onClick={() => setShowPopUpEmail(false)}>schließen</button>
             </div>
         }
-        {showPopUpText &&
+        {
+            showPopUpText &&
             <div className="popUp">
                 <p>Bitte gib eine Nachricht ein.</p>
                 <button onClick={() => setShowPopUpText(false)}>schließen</button>
             </div>
         }
-        {showPopUpSuccess &&
+        {
+            showPopUpSuccess &&
             <div className="popUp">
                 <h1>Wir haben deine Nachricht erhalten.</h1>
                 <p>Zur Bestätigung haben wir dir soeben eine Nachricht an deine Emailaddresse geschickt.</p>
@@ -144,7 +149,8 @@ const Kontakt = () => {
                 <button onClick={() => setShowPopUpSuccess(false)}>schließen</button>
             </div>
         }
-        {showPopUpNoSend &&
+        {
+            showPopUpNoSend &&
             <div className="popUp">
                 <h1>Uuuupss... ein Fehler ist aufgetreten.</h1>
                 <p>Bitte versuche es erneut.</p>

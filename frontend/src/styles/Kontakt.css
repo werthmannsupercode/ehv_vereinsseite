@@ -20,7 +20,7 @@ form {
 }
 
 .h1Kontakt {
-    padding-top: 20vh;
+    padding-top: 2vh;
     text-align: center;
     font-family: 'Playfair Display', serif;
     font-weight: 300;
@@ -113,4 +113,57 @@ form {
     color: white;
     background-color: rgb(108, 118, 89);
     cursor: pointer;
+}
+
+.lageplan {
+    display: block;
+    margin: 0 auto 16vh auto;
+    width: 100vw;
+}
+
+.haedlineKontakt {
+    font-family: 'Roboto', sans-serif;
+    font-size: 6rem;
+    color: rgb(108, 118, 89);
+    padding: 15vh 0 0 10vw;
+}
+
+.kontakt {
+    display: flex;
+    justify-content: space-between;
+    padding: 20vh 10vw;
+    background-color: rgb(108, 118, 89);
+    margin-top: 15vh;
+    color: white;
+}
+
+.kontaktVorstaende {
+    display: flex;
+    width: 40vw;
+    justify-content: space-between;
+    margin-right: 5vw;
+}
+
+.kontakt h2,
+.kontakt p {
+    font-family: 'Roboto', sans-serif;
+}
+
+.kontakt h2 {
+    font-size: 2rem;
+}
+
+.kontakt p {
+    font-size: 1.6rem;
+}
+
+.kontakt div p:first-of-type {
+    padding-top: 2vh;
+}
+
+.kontakt h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.4rem;
+    padding-bottom: 5vh;
+    font-weight: 400;
 }
