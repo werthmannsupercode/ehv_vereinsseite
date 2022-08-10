@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap');
+
+.newsHaedline {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 8rem;
+    padding: 12vh 0 3vh 0;
+    color: rgb(108, 118, 89);
+    text-align: center;
+}
+
+.newsSubtitle h2 {
+    font-size: 1.8rem;
+    padding: 1vh 0;
+    color: rgb(108, 118, 89);
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.newsSubtitle {
+    display: flex;
+    justify-content: space-around;
+    width: 80vw;
+    border-top: 4px double rgb(108, 118, 89);
+    border-bottom: 4px double rgb(108, 118, 89);
+    margin: 0 10vw;
+}
