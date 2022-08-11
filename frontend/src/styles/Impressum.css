@@ -1,10 +1,40 @@
 .impressum {
     padding: 17vh 8vw;
+    font-family: 'Roboto', sans-serif;
 }
 
 .impressum h1 {
     color: rgb(108, 118, 89);
-    font-family: 'Roboto', sans-serif;
     font-size: 6rem;
     padding-bottom: 7vh;
+}
+
+.impressum h2 {
+    font-size: 2.5rem;
+    padding-bottom: 3vh;
+}
+
+.impressum p {
+    font-size: 1.6rem;
+}
+
+.impressum p:nth-of-type(3) {
+    padding-bottom: 2vh;
+}
+
+.impressum h3 {
+    font-size: 2rem;
+    padding: 2vh 0 1vh 0;
+}
+
+.impressum a {
+    color: rgb(108, 118, 89);
+    font-size: 1.6rem;
+}
+
+.blaumeise {
+    position: absolute;
+    top: 15vh;
+    right: 15vw;
+    width: 40vw;
 }
