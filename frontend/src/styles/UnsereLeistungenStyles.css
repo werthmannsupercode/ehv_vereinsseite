@@ -1,13 +1,29 @@
-.unsereleistungen {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 17vh 8vw;
-    gap: 5vw;
-}
-
 .unsereleistungen h1 {
     color: rgb(108, 118, 89);
     font-family: 'Roboto', sans-serif;
     font-size: 6rem;
+    padding: 17vh 0 0 8vw;
+}
+
+.unsereleistungen div p {
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    padding: 5vh 8vw;
+}
+
+.unsereleistungen div ul {
+    margin: 5vh 37vw;
+}
+
+.unsereleistungen div ul li {
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 2;
+}
+
+.unsereleistungen img {
+    width: 90vw;
+    position: absolute;
+    top: 40vh;
+    left: 5vw;
 }
