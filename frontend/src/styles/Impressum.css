@@ -1,0 +1,10 @@
+.impressum {
+    padding: 17vh 8vw;
+}
+
+.impressum h1 {
+    color: rgb(108, 118, 89);
+    font-family: 'Roboto', sans-serif;
+    font-size: 6rem;
+    padding-bottom: 7vh;
+}

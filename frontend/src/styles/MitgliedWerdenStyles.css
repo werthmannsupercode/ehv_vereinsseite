@@ -1,13 +1,59 @@
 .mitgliedwerden {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 17vh 8vw;
-    gap: 5vw;
 }
 
 .mitgliedwerden h1 {
     color: rgb(108, 118, 89);
     font-family: 'Roboto', sans-serif;
     font-size: 6rem;
+    padding-bottom: 7vh;
+}
+
+.mitgliedwerden>p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    padding: 0 10vw 4vh 10vw;
+}
+
+.mitgliedwerden p span {
+    font-weight: 600;
+}
+
+.mitgliedwerden p a {
+    color: rgb(108, 118, 89);
+}
+
+.downloadBeitrittserklaerungen {
+    display: flex;
+    padding: 0 10vw 9vh 10vw;
+    justify-content: space-between;
+}
+
+.downloadBeitrittserklaerungen h2 {
+    font-family: 'Playfair Display', serif;
+    color: rgb(108, 118, 89);
+    font-size: 2rem;
+    padding: 5vh 0 2vh 0;
+    font-weight: 400;
+}
+
+.kontaktVorstaende2 {
+    display: flex;
+    padding-bottom: 4vh;
+    justify-content: flex-start;
+    gap: 10vw;
+    width: 40vw;
+    margin: 0 auto;
+}
+
+.kontaktVorstaende2 h2 {
+    font-family: 'Playfair Display', serif;
+    color: rgb(108, 118, 89);
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.kontaktVorstaende2 p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
 }
